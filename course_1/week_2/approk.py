@@ -17,3 +17,5 @@ print(b3)
 
 f1 = linalg.solve(A, b3)
 print(f1)
+
+

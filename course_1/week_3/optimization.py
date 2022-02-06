@@ -27,7 +27,6 @@
 
 from math import * 
 from scipy.optimize import minimize
-import numpy as np
 
 def fun(x):
     f = sin(x/5.) * exp(x/10.) + 5 * exp(-x/2.)
@@ -37,3 +36,6 @@ def fun(x):
 x0 = [2]
 res = minimize(fun, [30], method='BFGS')
 print(round(fun(*res.x), 2))
+
+
+#Ответ: 1.75 -11.9
